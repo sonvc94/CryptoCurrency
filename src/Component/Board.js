@@ -32,27 +32,28 @@ class Board extends React.Component{
 
     render(){
         return(
-            <table className="table table-striped border">
-                <thead>
-                    <tr className="border">
-                        <th className="border">#</th>
-                        <th className="left-text">Name</th>
-                        <th className="right-text">Market Cap</th>
-                        <th className="right-text">Price</th>
-                        <th className="right-text">Circulating Supply</th>
-                        <th className="right-text">Change (24h)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        this.state.coinList.map((coin,i) =>{
-                            return <Coin key={i} rank={coin.rank} name={coin.name} market_cap_usd={coin.market_cap_usd} price_usd={coin.price_usd}
-                                        available_supply={coin.available_supply} percent_change_24h={coin.percent_change_24h} symbol={coin.symbol}/>
-                        })
-                    }
-                </tbody>
-            </table>
-            
+            <div className="table-responsive">
+                <table className="table table-sm table-striped border">
+                    <thead>
+                        <tr className="border">
+                            <th className="border">#</th>
+                            <th className="left-text">Name</th>
+                            <th className="right-text">Market Cap</th>
+                            <th className="right-text">Price</th>
+                            <th className="right-text">Circulating Supply</th>
+                            <th className="right-text">Change (24h)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.state.coinList.map((coin,i) =>{
+                                return <Coin key={i} rank={coin.rank} name={coin.name} market_cap_usd={coin.market_cap_usd} price_usd={coin.price_usd}
+                                            available_supply={coin.available_supply} percent_change_24h={coin.percent_change_24h} symbol={coin.symbol}/>
+                            })
+                        }
+                    </tbody>
+                </table>
+            </div>
         )
     }
 }
