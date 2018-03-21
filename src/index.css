@@ -1,0 +1,43 @@
+.blue {
+    color : #4d79ff;
+}
+.right-text {
+    text-align: right;
+}
+.left-text {
+    text-align: left;
+}
+#board {
+    width: 70%;
+    font-size: 14px; 
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+#option{
+    width: 70%;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.border {
+   border: 2px solid black; 
+}
+#header {
+    height: 150px;
+    background-color: rgb(230, 158, 23);
+    padding-top: 60px;
+    padding-left: 10%;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cambria;
+}
+
+.green-text {
+    color: green;
+}
+.red-text {
+    color: red;
+}
